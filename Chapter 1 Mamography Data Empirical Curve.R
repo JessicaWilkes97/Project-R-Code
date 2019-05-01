@@ -1,0 +1,10 @@
+diseasedordinaltests<-sort(diseasedordinal$marker)
+nondiseasedordinaltests<-sort(nondiseasedordinal$marker)
+length(diseasedordinaltests)
+length(nondiseasedordinaltests)
+table(diseasedordinaltests)
+table(nondiseasedordinaltests)
+TPR<-c(1,0.973,0.905,0.806,0.645,0.402)
+FPR<-c(1,0.906,0.713,0.521,0.312,0.113)
+plot(FPR,TPR, xlim=c(0,1), ylim=c(0,1))
+
